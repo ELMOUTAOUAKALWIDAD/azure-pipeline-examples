@@ -25,4 +25,12 @@ jobs:
   - pwsh: |
       echo "##vso[task.logissue type=error]This text will be rendered as an error, and will be shown on the pipeline run summary"
     displayName: '##vso[task.logissue type=error]'
-  
+
+- job: 'myissue'
+  displayName: 'Error message 3'
+  pool:
+    name: 'Hosted'
+  steps:
+  - pwsh: |
+      echo "this is the error 3"
+    displayName: '##vso[task.logissue type=error]'
