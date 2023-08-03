@@ -24,7 +24,7 @@ jobs:
   pool:
    vmImage: 'ubuntu-latest' 
    variables:
-   imageName: 'pipelines-javascript-docker'
+   imageName: 'nginxr'
 
   steps:
   - task: Docker@2
