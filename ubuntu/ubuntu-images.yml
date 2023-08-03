@@ -24,7 +24,7 @@ jobs:
   pool:
    vmImage: 'ubuntu-latest' 
    variables:
-   imageName: 'nginxr'
+   imageName: 'nginx'
 
   steps:
   - task: Docker@2
@@ -32,4 +32,4 @@ jobs:
     inputs:
      repository: $(imageName)
      command: build
-     Dockerfile: Dockerfile
+     Dockerfile: ./Dockerfile
