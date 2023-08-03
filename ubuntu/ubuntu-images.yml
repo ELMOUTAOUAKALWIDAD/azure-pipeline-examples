@@ -24,7 +24,7 @@ jobs:
   pool:
    vmImage: 'ubuntu-latest' 
    variables:
-     imageName: 'nginx'
+    imageName: 'nginx'
 
   steps:
   - task: Docker@2
