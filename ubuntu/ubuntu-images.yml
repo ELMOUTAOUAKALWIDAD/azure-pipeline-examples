@@ -15,6 +15,7 @@ jobs:
   - bash: |
       echo Hello from Ubuntu 20.04
       lsb_release -d
+      ls
   - pwsh: |
       Write-Host "`$PSVersionTable.OS"
       $PSVersionTable.OS
