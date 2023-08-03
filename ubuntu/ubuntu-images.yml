@@ -19,3 +19,12 @@ jobs:
   - pwsh: |
       Write-Host "`$PSVersionTable.OS"
       $PSVersionTable.OS
+
+- job: build-image
+  pool:
+    vmImage: 'docker:19.03'
+  steps:
+  - bash: |
+      echo Hello from docker
+      docker info
+      docker ps -a
