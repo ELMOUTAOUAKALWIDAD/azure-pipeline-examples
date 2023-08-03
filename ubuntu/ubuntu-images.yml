@@ -22,7 +22,7 @@ jobs:
 
 - job: buildimage
   pool:
-    vmImage: 'docker:24.0.5-git'
+    vmImage: 'docker'
   steps:
   - bash: |
       echo Hello from docker
