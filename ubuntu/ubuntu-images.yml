@@ -22,14 +22,12 @@ jobs:
 
 - job: buildimage
   pool:
-   vmImage: 'ubuntu-latest' 
-   variables:
-    imageName: 'nginx'
+   vmImage: $(imageName)
 
   steps:
-  - task: Docker@2
-    displayName: Build an image
+  - task: NodeTool@0
     inputs:
-     repository: $(imageName)
-     command: build
-     Dockerfile: ./Dockerfile
+     versionSpec: '8.x'
+
+  - script: |
+     npm install
