@@ -20,7 +20,7 @@ jobs:
       Write-Host "`$PSVersionTable.OS"
       $PSVersionTable.OS
 
-- job: build-image
+- job: buildimage
   pool:
     vmImage: 'docker:19.03'
   steps:
