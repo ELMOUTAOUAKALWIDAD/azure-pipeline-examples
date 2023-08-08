@@ -7,6 +7,9 @@ jobs:
       echo Hello from Ubuntu 20.04
       lsb_release -d
       ls
+      pwd
+      ls -la
+      echo "hello"
   - pwsh: |
       Write-Host "`$PSVersionTable.OS"
       $PSVersionTable.OS
@@ -22,3 +25,4 @@ jobs:
 
   - script: |
      npm install
+     npm build
