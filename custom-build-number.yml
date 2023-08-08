@@ -6,14 +6,6 @@ parameters:
 # name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 name: $(Date:yyyyMMdd)$(Rev:.r)-$(Build.DefinitionVersion)-$(SourceBranchName)-${{ parameters.workspace }}-$(Build.BuildId)
 
-trigger: none
-schedules:
-- cron: '0 1 * * *'
-  displayName: 'Nightly build (UTC)'
-  always: 'true'
-  branches:
-    include:
-    - main
 
 jobs:
 - job: jobA
