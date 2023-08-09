@@ -10,6 +10,7 @@ jobs:
       pwd
       ls -la
       echo "hello"
+      git status
   - pwsh: |
       Write-Host "`$PSVersionTable.OS"
       $PSVersionTable.OS
