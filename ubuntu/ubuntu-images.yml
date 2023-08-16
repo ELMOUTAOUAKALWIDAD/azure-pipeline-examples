@@ -1,4 +1,7 @@
 jobs:
+- task: SonarQubeAnalyze@5
+  inputs:
+    jdkversion: 'JAVA_HOME_11_X64'
 - job: ubuntu2004
   pool:
     vmImage: 'ubuntu-20.04'
